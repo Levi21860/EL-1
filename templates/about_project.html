@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body class="about-page-body">
+    <nav>
+        <ul>
+            <a href="{{ url_for('index') }}"><li>Home</li></a>
+            <a href="{{ url_for('about_project') }}"><li>About the project</li></a>
+            <a href="{{ url_for('moisture') }}"><li>Moisture Temperature and Humidity Prediction</li></a>
+            
+            <a href="{{ url_for('faqs') }}"><li>FAQs</li></a>
+            <a href="{{ url_for('contacts') }}"><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div class="about-page-container">
+        <div class="about-page-image">
+            <img src="{{ url_for('static', filename='images/image.jpeg') }}" width="400px" height="300px">
+        </div>
+        <div class="about-page-content">
+            <h1>ABOUT THE PROJECT</h1>
+            <p>Our soil analyzer uses AI to measure key soil parameters and provide real-time updates.It offers personalized advice on improving soil quality,crop recommendations,and tips for enhancing gardern soil,making it perfect for hobby gardeners.</p>
+        </div>
+    </div>
+</body>
+</html>

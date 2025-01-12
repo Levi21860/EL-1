@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    
+}
+body{
+    background-image: url(../images/bg_image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lobster' , cursive;
+    background-position: center;
+    height: 100vh;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(213, 213, 20);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+nav a li{
+    list-style: none;
+    margin-left: 120px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+nav a li:hover{
+    transform: scale(1.1); 
+}
+.contacts-heading{
+    text-align:center;
+    margin-bottom: 10vh;
+
+}
+h1{
+    font-size:64px;
+    font-family: 'Lobster',cursive;
+    font-style:italic;
+    color: rgb(5, 116, 116);
+}
+.contacts-content{
+    margin-left:20vh;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/faq_styles.css') }}">
+
+</head>
+<body>
+    <nav class="faqs-nav">
+        <ul>
+            <a href="{{ url_for('index') }}"><li>Home</li></a>
+            <a href="{{ url_for('about_project') }}"><li>About the Project</li></a>
+            <a href="{{ url_for('moisture') }}"><li>Moisture Temperature and Humidity Prediction</li></a>
+            
+            <a href="{{ url_for('faqs') }}"><li>FAQs</li></a>
+            <a href="{{ url_for('contacts') }}"><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div class="faqs-heading">
+        <h1>FAQs</h1>
+    </div>
+    <div class="faqs-sub">
+        <div class="faq-div-1">
+            <p id="p1">WHY IS OUR SOIL ANALYZER UNIQUE</p>
+            <br>
+            <p id="p2" >We are using AI based interfaced to come up with recommendations and offer insights about the soil.</p>
+            <hr>
+        </div>
+        <div class="faq-div-2">
+            <p id="p3"> WILL IT WORK FOR ALL SOIL TYPES</p>
+            <br>
+            <p id="p4">The soil analyzer is designed to work on soil types.</p>
+            <hr>
+        </div>
+        <div class="faq-div-3">
+            <p id="p5">WHO CAN USE IT</p>
+            <br>
+            <p id="p6">Anyone can use be it someone who is completely new towards growing crops or someone who just likes to do gardening for fun.</p>
+            <hr>
+        </div>
+    </div>
+</body>
+</html>

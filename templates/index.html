@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="{{ url_for('index') }}"><li>Home</li></a>
+            <a href="{{ url_for('about_project') }}"><li>About the Project</li></a>
+            <a href="{{ url_for('moisture') }}"><li>Moisture Temperature and Humidity Prediction</li></a>
+           
+            
+            <a href="{{ url_for('faqs') }}"><li>FAQs</li></a>
+            <a href="{{ url_for('contacts') }}"><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div class="main-page-container">
+        <div class="main-content">
+            <p>SOIL</p>
+            <p>ANALYZER:</p>
+            <p>YOUR SOIL</p>
+            <p>ANALYZED FOR</p>
+            <p>SUCCESS</p>
+
+        </div>
+        <div class="main-image">
+            <img src="{{ url_for('static', filename='images/intro1.jpeg') }}" width="400px" height="300px">
+        </div>
+    </div>
+</body>
+</html>

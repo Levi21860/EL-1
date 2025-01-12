@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacts_styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="{{ url_for('index') }}"><li>Home</li></a>
+            <a href="{{ url_for('about_project') }}"><li>About the project</li></a>
+            <a href="{{ url_for('moisture') }}"><li>Moisture Temperature and Humidity Prediction</li></a>
+            
+            <a href="{{ url_for('faqs') }}"><li>FAQs</li></a>
+            <a href="{{ url_for('contacts') }}"><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div class="contacts-heading">
+        <h1>CONTACTS</h1>
+    </div>
+    <div class="contacts-content">
+        <p>PHONE</p>
+        <p>123-456-789</p>
+        <br>
+        <p>EMAIL</p>
+        <p>hello@reallygreatsite.com</p>
+        <br>
+        <p>SOCIAL</p>
+        <img src="{{ url_for('static', filename='images/icons.jpeg') }}"
+
+    </div>
+</body>
+</html>

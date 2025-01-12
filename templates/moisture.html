@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moisture Prediciton</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/moisture_styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="{{ url_for('index') }}"><li>Home</li></a>
+            <a href="{{ url_for('about_project') }}"><li>About the Project</li></a>
+            <a href="{{ url_for('moisture') }}"><li>Moisture Temperature and Humidity Prediction</li></a>
+            
+            
+            <a href="{{ url_for('faqs') }}"><li>FAQs</li></a>
+            <a href="{{ url_for('contacts') }}"><li>Contact</li></a>
+        </ul>
+    </nav>
+          <div class="moist-container">
+            <div class="moist-heading">
+                <h1>MOISTURE TEMPERATURE AND HUMIDITY PREDICTION</h1>
+            </div>
+            <form method="POST">
+                
+                <div class="form-row">
+                    <label for="id1">ENTER VALUES:</label>
+                    <input type="text" id="id1" name="id1" placeholder='Eg- 552.78,29.12,61.74'>
+                </div>
+                
+                
+                <div class="prediction">
+                    <label for="id2">PREDICTED DATE AND TIME:</label>
+                    <div class="predict-box">
+                        {% if prediction %}
+                        <h3> {{ prediction }}</h3> 
+                        {% else %}
+                        <h3>No prediction made yet.</h3> 
+                        {% endif %}
+
+                    </div>
+                </div>
+        
+                
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+           </div>
+    
+    </div>
+    
+</body>
+</html>
